@@ -36,3 +36,42 @@ p {
     box-shadow: 0 0 20px rgba(169, 95, 251, 0.8);
     margin-bottom: 20px;
   }
+
+  form {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(169, 95, 251, 0.6);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #a95ffb;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #a95ffb;
+    font-size: 1rem;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .checkbox label {
+    margin-left: 5px;
+  }
