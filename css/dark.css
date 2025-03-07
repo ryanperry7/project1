@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
 
 body {
-  background-color: #000000;
+  background: url('../images/dark-fantasy.jpg') no-repeat center center/cover;
   color: #a95ffb;
   font-family: 'Metamorphous', serif;
   margin: 0;
@@ -12,6 +12,18 @@ body {
   height: 100vh;
   text-align: center;
   flex-direction: column;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 .container {
@@ -37,21 +49,6 @@ p {
   font-family: 'Metamorphous', serif;
   max-width: 600px;
   line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.image {
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(169, 95, 251, 0.8);
   margin-bottom: 20px;
 }
 
