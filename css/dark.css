@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
 
 body {
   background-color: #000000;
@@ -11,4 +11,20 @@ body {
   align-items: center;
   height: 100vh;
   text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Metamorphous', serif;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
