@@ -3,7 +3,7 @@
 body {
   background: url('../images/dark-fantasy.jpg') no-repeat center center/cover;
   color: #a95ffb;
-  font-family: 'Metamorphous', serif;
+  font-family: 'Metamorphous', Georgia, 'Times New Roman', serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -46,7 +46,7 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  font-family: 'Metamorphous', serif;
+  font-family: 'Metamorphous', Georgia, 'Times New Roman', serif;
   max-width: 600px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -106,11 +106,34 @@ input[type="password"] {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-family: 'Metamorphous', serif;
+  font-family: 'Metamorphous', Georgia, 'Times New Roman', serif;
 }
 
 .submit-btn:hover {
   background: #822dce;
   box-shadow: 0 0 10px rgba(169, 95, 251, 0.8);
   transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 20px;
+    flex-direction: row;
+  }
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .submit-btn {
+    padding: 14px 28px;
+    font-size: 1.3rem;
+  }
 }
